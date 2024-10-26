@@ -11,13 +11,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 }
 
 nav h2{
     font-size: 28px;
     color: #304966;
-    padding-left: 25px;
-    padding-top: 30px;
 }
 
 nav ul{
@@ -25,7 +24,6 @@ nav ul{
     gap: 40px;
     list-style: none;
     align-items: center;
-    padding-top: 30px;
 }
 
 nav ul li a{
@@ -33,7 +31,6 @@ nav ul li a{
     color: #000;
     font-size: 16px;
     font-weight: 600;
-    padding-right: 30px;
 }
 
 nav ul li a:hover{
@@ -43,8 +40,6 @@ nav ul li a:hover{
 .menu-icon{
     font-size: 24px;
     display: none;
-    padding-right: 25px;
-    padding-top: 30px;
 }
 
 
@@ -55,8 +50,7 @@ nav ul li a:hover{
     }
 
     nav ul{
-        margin: 30px;
-        padding: 20px;
+        margin-top: 20px;
         border-radius: 20px;
         padding: 20px;
         flex-direction: column;
