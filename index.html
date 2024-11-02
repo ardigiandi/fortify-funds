@@ -1,12 +1,671 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/output.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1 class="text-3xl text-blue-600">Hello</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <title>FortifyFunds</title>
+  </head>
+  <body>
+    <!-- Ini Navbar -->
+    <nav class="max-w-7xl mx-auto my-4 px-5 lg:px-0">
+      <div class="flex justify-between items-center">
+        <h1 class="text-2xl font-semibold">FortifyFunds</h1>
+
+        <!-- Menu utama (hanya terlihat di layar besar) -->
+        <ul class="gap-8 hidden lg:flex">
+          <li><a href="index.html" class="text-base font-medium">Home</a></li>
+          <li>
+            <a href="opportunities.html" class="text-base font-medium"
+              >Opportunities</a
+            >
+          </li>
+          <li>
+            <a href="services.html" class="text-base font-medium">Services</a>
+          </li>
+          <li><a href="about.html" class="text-base font-medium">About</a></li>
+        </ul>
+
+        <!-- Tombol About (hanya terlihat di layar besar) -->
+        <a
+          href="contact.html"
+          class="bg-blue-600 hidden lg:block px-8 py-2 rounded-lg text-base font-semibold text-white"
+          >Contact</a
+        >
+
+        <!-- Tombol Hamburger (hanya terlihat di layar kecil) -->
+        <div id="btn-dropdown" class="block lg:hidden p-[10px]">
+          <img src="./public/images/menu.svg" alt="Menu Icon" />
+        </div>
+      </div>
+
+      <!-- Hamburger dropdown menu (tampilan mobile) -->
+      <div
+        id="dropdown-menu"
+        class="relative top-8 hidden flex-col px-4 md:px-10 w-full border-b"
+      >
+        <div class="flex flex-col md:p-8 gap-4">
+          <ul class="flex flex-col gap-4">
+            <li><a href="index.html" class="text-base font-medium">Home</a></li>
+            <li>
+              <a href="opportunities.html" class="text-base font-medium"
+                >Opportunities</a
+              >
+            </li>
+            <li>
+              <a href="services.html" class="text-base font-medium">Services</a>
+            </li>
+            <li>
+              <a href="about.html" class="text-base font-medium">About</a>
+            </li>
+          </ul>
+
+          <a
+            href="contact.html"
+            class="bg-blue-600 px-8 py-2 flex justify-center rounded-lg text-base font-semibold text-white"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- End: Navbar -->
+
+    <!-- Start: Main hero -->
+    <section
+      class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between lg:mt-24 mt-4 items-center"
+    >
+      <div class="flex flex-col gap-7 py-16 lg:w-1/2 w-full px-5 lg:px-0">
+        <h1
+          class="lg:text-[80px] text-6xl leading-tight tracking-[-0.7px] font-bold"
+        >
+          Investing Simplified
+        </h1>
+        <p
+          class="lg:w-[500px] w-full text-base text-gray-600 tracking-[-0.7px]"
+        >
+          Take command of your financial future and transcend to the life you've
+          always envisioned. Unleash potential and master the art of investment
+          with unparalleled ease and precision.
+        </p>
+        <div class="bg-abu lg:w-[500px] w-full p-6 rounded-3xl">
+          <div class="flex justify-between items-center">
+            <h1 class="text-xl font-bold">4.9</h1>
+            <a
+              href="#"
+              class="text-base font-bold text-white px-5 py-2 bg-biru rounded-full tracking-[-0.7px]"
+              >Get Started</a
+            >
+          </div>
+          <p class="mt-7 text-base font-semibold tracking-[-0.7px]">
+            Discover a World of Investment Opportunities: Start Growing Your
+            Wealth Now
+          </p>
+        </div>
+      </div>
+
+      <div class="lg:w-[600px] relative px-5 lg:px-0">
+        <img src="./public/images/hero.png" alt="" class="relative w-full" />
+        <img
+          src="./public/images/sub hero.png"
+          alt=""
+          class="absolute lg:w-[350px] w-[200px] md:w-[300px] lg:bottom-6 lg:right-6 md bottom-4 right-8"
+        />
+      </div>
+    </section>
+    <!-- End: Main hero -->
+
+    <!-- Start: Explore -->
+    <section class="max-w-6xl mx-auto mt-28">
+      <div class="flex lg:flex-row flex-col justify-between lg:px-10 px-5">
+        <h1
+          class="lg:text-[46px] text-4xl font-bold lg:w-[338px] leading-tight tracking-[-0.7px]"
+        >
+          Explore Recent Opportunities
+        </h1>
+        <div class="flex flex-col gap-6 mt-5 lg:mt-0">
+          <h1
+            class="lg:w-[505px] lg:text-base text-sm font-medium text-gray-500 tracking-[-0.7px]"
+          >
+            Unlock a Universe of Investment Opportunities Step into a realm
+            where growth and opportunity converge. Our innovative platform opens
+            doors to a meticulously curated selection of high-potential
+            investments, crafted to diversify your portfolio and amplify your
+            wealth.
+          </h1>
+          <div class="flex gap-2 items-center">
+            <a href="#" class="text-base text-biru font-bold tracking-[-0.7px]"
+              >LEARN MORE</a
+            >
+            <img src="./public/images/right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap mt-16 justify-center gap-5">
+        <!-- Start: Card -->
+        <div
+          class="card flex lg:flex-row flex-col p-5 border border-gray-600 rounded-3xl gap-5"
+        >
+          <img src="./public/images/card1.png" alt="" class="w-[209px] h-[226px]" />
+          <div class="flex flex-col gap-4 w-[170px]">
+            <h1 class="text-xl font-bold leading-tight tracking-[-0.7px]">
+              International Art Museum
+            </h1>
+            <div class="flex flex-col gap-2">
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/money.svg" alt="" />
+                <h1 class="text-sm text-gray-500 tracking-[-0.7px]">
+                  Valuation $5M
+                </h1>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/hand.svg" alt="" />
+                <h1 class="text-sm text-gray-500 tracking-[-0.7px]">
+                  75 investors
+                </h1>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/target.svg" alt="" />
+                <h1 class="text-sm text-gray-500 tracking-[-0.7px]">
+                  Target $500,000
+                </h1>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/location.svg" alt="" />
+                <h1 class="text-sm text-gray-500 tracking-[-0.7px]">
+                  London, Uk
+                </h1>
+              </div>
+            </div>
+            <div class="flex gap-2 items-center">
+              <a
+                href="#"
+                class="text-base text-biru font-bold tracking-[-0.7px]"
+                >LEARN MORE</a
+              >
+              <img src="./public/images/right.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- End: Card -->
+        <!-- Start: Card -->
+        <div
+          class="card flex lg:flex-row flex-col p-5 border border-gray-600 rounded-3xl gap-5"
+        >
+          <img src="./public/images/card2.png" alt="" class="w-[209px] h-[226px]" />
+          <div class="flex flex-col gap-4 w-[170px]">
+            <h1 class="text-xl font-bold leading-tight">
+              Web Application Investment Program
+            </h1>
+            <div class="flex flex-col gap-2">
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/money.svg" alt="" />
+                <h1 class="text-sm text-gray-500">Valuation $5M</h1>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/hand.svg" alt="" />
+                <h1 class="text-sm text-gray-500">75 investors</h1>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/target.svg" alt="" />
+                <h1 class="text-sm text-gray-500">Target $500,000</h1>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/location.svg" alt="" />
+                <h1 class="text-sm text-gray-500">London, Uk</h1>
+              </div>
+            </div>
+            <div class="flex gap-2 items-center">
+              <a href="#" class="text-base text-biru font-bold">LEARN MORE</a>
+              <img src="./public/images/right.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- End: Card -->
+        <!-- Start: Card -->
+        <div
+          class="card flex lg:flex-row flex-col p-5 border border-gray-600 rounded-3xl gap-5"
+        >
+          <img src="./public/images/card3.png" alt="" class="w-[209px] h-[226px]" />
+          <div class="flex flex-col gap-4 w-[170px]">
+            <h1 class="text-xl font-bold leading-tight">
+              Construction for School Building
+            </h1>
+            <div class="flex flex-col gap-2">
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/money.svg" alt="" />
+                <h1 class="text-sm text-gray-500">Valuation $5M</h1>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/hand.svg" alt="" />
+                <h1 class="text-sm text-gray-500">75 investors</h1>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/target.svg" alt="" />
+                <h1 class="text-sm text-gray-500">Target $500,000</h1>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/location.svg" alt="" />
+                <h1 class="text-sm text-gray-500">London, Uk</h1>
+              </div>
+            </div>
+            <div class="flex gap-2 items-center">
+              <a href="#" class="text-base text-biru font-bold">LEARN MORE</a>
+              <img src="./public/images/right.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- End: Card -->
+        <!-- Start: Card -->
+        <div
+          class="card flex lg:flex-row flex-col p-5 border border-gray-600 rounded-3xl gap-5"
+        >
+          <img src="./public/images/card4.png" alt="" class="w-[209px] h-[226px]" />
+          <div class="flex flex-col gap-4 w-[170px]">
+            <h1 class="text-xl font-bold leading-tight">
+              Autoparts Gear Manufacture
+            </h1>
+            <div class="flex flex-col gap-2">
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/money.svg" alt="" />
+                <h1 class="text-sm text-gray-500">Valuation $5M</h1>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/hand.svg" alt="" />
+                <h1 class="text-sm text-gray-500">75 investors</h1>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/target.svg" alt="" />
+                <h1 class="text-sm text-gray-500">Target $500,000</h1>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="./public/images/location.svg" alt="" />
+                <h1 class="text-sm text-gray-500">London, Uk</h1>
+              </div>
+            </div>
+            <div class="flex gap-2 items-center">
+              <a href="#" class="text-base text-biru font-bold">LEARN MORE</a>
+              <img src="./public/images/right.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- End: Card -->
+      </div>
+    </section>
+    <!-- End: Explore -->
+
+    <!-- Start: Financial -->
+    <section class="max-w-5xl lg:mx-auto mt-28 bg-abu rounded-2xl py-10 mx-5">
+      <div class="flex lg:flex-row flex-col justify-between lg:px-10 px-5">
+        <h1
+          class="lg:text-[36px] text-4xl lg:w-[368px] font-bold leading-tight tracking-[-0.7px]"
+        >
+          Fortify Your Financial Horizon
+        </h1>
+        <div class="flex flex-col gap-6 mt-5 lg:mt-0">
+          <h1
+            class="lg:w-[418px] lg:text-base text-sm font-medium text-gray-500 tracking-[-0.7px]"
+          >
+            Embark on a transformative journey that guarantees to elevate your
+            economic stature through strategic investment opportunities.
+          </h1>
+          <div class="flex gap-2 items-center">
+            <a href="#" class="text-base text-biru font-bold tracking-[-0.7px]"
+              >LEARN MORE</a
+            >
+            <img src="./public/images/right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-between lg:px-12 px-5 mt-14 gap-5">
+        <div class="flex flex-col gap-2 lg:w-[215px]">
+          <h1 class="text-xl font-bold leading-tight tracking-[-0.7px]">
+            Live Market Insights
+          </h1>
+          <p class="text-sm font-medium text-gray-500 tracking-[-0.7px]">
+            Gain an edge with real-time updates and expert analyses
+          </p>
+        </div>
+        <div class="flex flex-col gap-2 lg:w-[215px]">
+          <h1 class="text-xl font-bold leading-tight tracking-[-0.7px]">
+            Ventures Across Diverse Industries
+          </h1>
+          <p class="text-sm font-medium text-gray-500 tracking-[-0.7px]">
+            Step into a variety of sectors, each offering unique and lucrative
+          </p>
+        </div>
+        <div class="flex flex-col gap-2 lg:w-[215px]">
+          <h1 class="text-xl font-bold leading-tight tracking-[-0.7px]">
+            Revolutionary Investment Solutions
+          </h1>
+          <p class="text-sm font-medium text-gray-500 tracking-[-0.7px]">
+            Harness the power of ground breaking strategies and tools
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End: Financial -->
+
+    <!-- Start: Smart Solutions -->
+    <section class="max-w-5xl mx-auto mt-20">
+      <div class="flex flex-col items-center gap-5 px-5 lg:px-0">
+        <a
+          href="#"
+          class="text-base font-bold border border-biru px-5 py-2 rounded-full tracking-[-0.7px]"
+        >
+          SOLUTION
+        </a>
+        <h1
+          class="text-4xl lg:text-[46px] font-bold leading-tight text-center tracking-[-0.7px]"
+        >
+          Smart Investment Solutions
+        </h1>
+        <p
+          class="text-sm lg:text-base font-medium text-gray-500 tracking-[-0.7px]"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar
+        </p>
+      </div>
+      <img src="/public/images/hero2.png" alt="" class="mt-10 px-5 lg:px-0" />
+
+      <div class="flex justify-center mt-8 gap-8 lg:gap-[234px]">
+        <div class="flex flex-col items-center">
+          <h1 class="text-[46px] font-bold">5k</h1>
+          <p class="text-base font-medium text-gray-500 tracking-[-0.7px]">
+            Investers
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h1 class="text-[46px] font-bold">96+</h1>
+          <p class="text-base font-medium text-gray-500 tracking-[-0.7px]">
+            Assests
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h1 class="text-[46px] font-bold">879</h1>
+          <p class="text-base font-medium text-gray-500 tracking-[-0.7px]">
+            Objects
+          </p>
+        </div>
+      </div>
+      <hr class="mt-10 text-gray-600 hidden lg:block" />
+    </section>
+    <!-- End: Smart Solutions -->
+
+    <!-- Start: Invest -->
+    <section class="max-w-5xl mx-auto mt-20 lg:mt-40">
+      <div class="flex flex-col items-center gap-5 px-5 lg:px-0">
+        <a
+          href="#"
+          class="text-base font-bold border border-biru px-5 py-2 rounded-full tracking-[-0.7px]"
+        >
+          FEATURES
+        </a>
+        <h1
+          class="text-4xl lg:text-[46px] font-bold leading-tight text-center tracking-[-0.7px]"
+        >
+          Invest with Precision Today
+        </h1>
+        <p
+          class="text-sm lg:text-base font-medium text-gray-500 tracking-[-0.7px]"
+        >
+          Navigate through the global investment landscape with our expert
+          guidance, ensuring every decision is calculated and potent.
+        </p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-9 mt-10">
+        <img
+          src="./public/images/invest1.png"
+          alt=""
+          class="invest-img w-[294px] h-[350px]"
+        />
+        <img
+          src="./public/images/invest2.png"
+          alt=""
+          class="invest-img w-[294px] h-[350px]"
+        />
+        <img
+          src="./public/images/invest3.png"
+          alt=""
+          class="invest-img w-[294px] h-[350px]"
+        />
+      </div>
+
+      <div class="lg:flex flex-wrap hidden justify-center mt-20 gap-[72px]">
+        <img src="./public/images/sponsor1.svg" alt="" />
+        <img src="./public/images/sponsor2.svg" alt="" />
+        <img src="./public/images/sponsor3.svg" alt="" />
+        <img src="./public/images/sponsor4.svg" alt="" />
+      </div>
+    </section>
+    <!-- End: Invest -->
+
+    <!-- Start: Meet Founder -->
+    <section
+      class="max-w-6xl mx-auto mt-32 flex flex-wrap justify-center gap-5 px-5"
+    >
+      <div
+        class="flex flex-col bg-abu rounded-3xl w-full lg:w-[473px] p-10 tracking-[-0.7px]"
+      >
+        <h1 class="text-3xl lg:text-4xl font-bold lg:w-[354px] w-full">
+          Meet Our Visionary Founder
+        </h1>
+        <p
+          class="text-base font-medium text-gray-600 mt-14 lg:mt-[112px] tracking-[-0.7px]"
+        >
+          "Led by our expert team of financial strategists, we are dedicated to
+          propelling you toward exceptional financial achievements"
+        </p>
+        <div class="flex items-center gap-5 mt-5">
+          <img src="./public/images/Ellipse 1.svg" alt="" />
+          <div class="flex flex-col gap-1">
+            <h1 class="text-base font-semibold tracking-[-0.7px]">
+              M.Ardiansyah Giandi
+            </h1>
+            <p class="text-sm font-medium tracking-[-0.7px]">Founder</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col justify-center gap-7 bg-abu p-6 lg:p-10 w-[467px] rounded-3xl"
+      >
+        <!-- FAQ 1 -->
+        <div class="relative">
+          <!-- Input Checkbox -->
+          <input type="checkbox" id="input1" class="absolute peer opacity-0" />
+          <!-- Heading -->
+          <label for="input1" class="text-sm font-bold tracking-[-0.7px]"
+            >What exclusive services do we provide?</label
+          >
+          <!-- Arrow -->
+          <div
+            class="absolute top-1 right-0 rotate-0 peer-checked:rotate-90 duration-200"
+          >
+            <img src="./public/images/right.svg" alt="" />
+          </div>
+          <!-- Content -->
+          <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+            <p class="py-5 tracking-[-0.7px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar
+            </p>
+          </div>
+          <hr class="mt-5" />
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="relative">
+          <!-- Input Checkbox -->
+          <input type="checkbox" id="input2" class="absolute peer opacity-0" />
+          <!-- Heading -->
+          <label for="input2" class="text-sm font-bold tracking-[-0.7px]"
+            >Which global areas do we influence</label
+          >
+          <!-- Arrow -->
+          <div
+            class="absolute top-1 right-0 rotate-0 peer-checked:rotate-90 duration-200"
+          >
+            <img src="./public/images/right.svg" alt="" />
+          </div>
+          <!-- Content -->
+          <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+            <p class="py-5 tracking-[-0.7px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar
+            </p>
+          </div>
+          <hr class="mt-5" />
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="relative">
+          <!-- Input Checkbox -->
+          <input type="checkbox" id="input3" class="absolute peer opacity-0" />
+          <!-- Heading -->
+          <label for="input3" class="text-sm font-bold tracking-[-0.7px]"
+            >What innovative property investments do we offer?</label
+          >
+          <!-- Arrow -->
+          <div
+            class="absolute top-1 right-0 rotate-0 peer-checked:rotate-90 duration-200"
+          >
+            <img src="./public/images/right.svg" alt="" />
+          </div>
+          <!-- Content -->
+          <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+            <p class="py-5 tracking-[-0.7px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar
+            </p>
+          </div>
+          <hr class="mt-5" />
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="relative">
+          <!-- Input Checkbox -->
+          <input type="checkbox" id="input4" class="absolute peer opacity-0" />
+          <!-- Heading -->
+          <label for="input4" class="text-sm font-bold tracking-[-0.7px]"
+            >How can you initiate a consultation?</label
+          >
+          <!-- Arrow -->
+          <div
+            class="absolute top-1 right-0 rotate-0 peer-checked:rotate-90 duration-200"
+          >
+            <img src="./public/images/right.svg" alt="" />
+          </div>
+          <!-- Content -->
+          <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+            <p class="py-5 tracking-[-0.7px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar
+            </p>
+          </div>
+          <hr class="mt-5" />
+        </div>
+
+        <div class="relative">
+          <!-- Input Checkbox -->
+          <input type="checkbox" id="input5" class="absolute peer opacity-0" />
+          <!-- Heading -->
+          <label for="input5" class="text-sm font-bold tracking-[-0.7px]"
+            >Lorem Ipsum is simply dummy text of the printing</label
+          >
+          <!-- Arrow -->
+          <div
+            class="absolute top-1 right-0 rotate-0 peer-checked:rotate-90 duration-200"
+          >
+            <img src="./public/images/right.svg" alt="" />
+          </div>
+          <!-- Content -->
+          <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+            <p class="py-5 tracking-[-0.7px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar
+            </p>
+          </div>
+          <hr class="mt-5" />
+        </div>
+      </div>
+    </section>
+    <!-- End: Meet Founder -->
+
+    <!-- Start: CTA -->
+    <section class="max-w-6xl mx-auto px-5 justify-center mt-32">
+      <img
+        src="./public/images/cta.png"
+        alt=""
+        class="lg:w-[956px] lg:h-[397px] mx-auto"
+      />
+    </section>
+    <!-- End: CTA -->
+
+    <!-- Start: Footer -->
+    <footer
+      class="max-w-6xl mx-auto flex flex-wrap justify-between mt-32 mb-20 px-10 gap-9"
+    >
+      <div class="flex flex-col gap-3">
+        <img src="./public/images/footer.svg" alt="" class="w-[44px] h-[44px]" />
+        <div class="flex gap-2">
+          <img src="./public/images/fb.svg" alt="" />
+          <img src="./public/images/x.svg" alt="" />
+          <img src="./public/images/yt.svg" alt="" />
+        </div>
+        <h1 class="text-base text-gray-600 font-medium tracking-[-0.7px]">
+          Powerd by Sociallib
+        </h1>
+      </div>
+
+      <div class="w-[228px]">
+        <h1 class="text-base text-biru font-semibold tracking-[-0.7px]">
+          OFFICE
+        </h1>
+        <p class="text-base text-gray-600 mt-3 tracking-[-0.7px]">
+          186, G Block, Road-7, South Point, Jersey, Network.
+        </p>
+        <div class="flex gap-2 mt-5">
+          <img src="./public/images/email.svg" alt="" />
+          <h1 class="text-base text-gray-500 tracking-[-0.7px]">
+            inqery@investa.io
+          </h1>
+        </div>
+        <div class="flex gap-2 mt-1">
+          <img src="./public/images/hp.svg" alt="" />
+          <h1 class="text-base text-gray-500 tracking-[-0.7px]">
+            + 1 496 6696369
+          </h1>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <h1 class="text-base text-biru font-bold tracking-[-0.7px]">MENU</h1>
+        <ul class="flex flex-col gap-2">
+          <li class="text-base text-gray-500 tracking-[-0.7px]">Service</li>
+          <li class="text-base text-gray-500 tracking-[-0.7px]">Features</li>
+          <li class="text-base text-gray-500 tracking-[-0.7px]">Partners</li>
+          <li class="text-base text-gray-500 tracking-[-0.7px]">
+            Testimonials
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <h1 class="text-base text-biru font-bold tracking-[-0.7px]">LINKS</h1>
+        <ul class="flex flex-col gap-2">
+          <li class="text-base text-gray-500 tracking-[-0.7px]">About us</li>
+          <li class="text-base text-gray-500 tracking-[-0.7px]">Contact</li>
+          <li class="text-base text-gray-500 tracking-[-0.7px]">Help Center</li>
+          <li class="text-base text-gray-500 tracking-[-0.7px]">
+            Testimonials
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- End: Footer -->
+    <script src="./src/script/index.js"></script>
+  </body>
 </html>
