@@ -23,9 +23,11 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         // Tambahkan kelas animasi ketika elemen masuk viewport
         entry.target.classList.add('animate-fade-up');
+        entry.target.classList.remove('opacity-0'); // Hilangkan opacity-0
       } else {
-        // Hapus kelas animasi ketika elemen keluar dari viewport
+        // Kembali ke kondisi awal jika elemen keluar dari viewport
         entry.target.classList.remove('animate-fade-up');
+        entry.target.classList.add('opacity-0');
       }
     });
   },
@@ -36,6 +38,7 @@ const observer = new IntersectionObserver(
 cards.forEach((card) => {
   observer.observe(card);
 });
+
 
 
 
