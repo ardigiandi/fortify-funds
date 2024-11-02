@@ -776,6 +776,10 @@ html {
   gap: 0.25rem;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
 .gap-2{
   gap: 0.5rem;
 }
@@ -810,6 +814,26 @@ html {
 
 .gap-\[72px\]{
   gap: 72px;
+}
+
+.gap-\[6px\]{
+  gap: 6px;
+}
+
+.gap-\[60px\]{
+  gap: 60px;
+}
+
+.gap-\[65px\]{
+  gap: 65px;
+}
+
+.gap-\[63px\]{
+  gap: 63px;
+}
+
+.gap-\[62px\]{
+  gap: 62px;
 }
 
 .overflow-hidden{
@@ -863,6 +887,11 @@ html {
 .bg-blue-600{
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.bg-blue-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
 .p-10{
@@ -943,10 +972,6 @@ html {
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
-}
-
-.text-\[46px\]{
-  font-size: 46px;
 }
 
 .text-base{
@@ -1142,6 +1167,10 @@ html {
     flex-direction: row;
   }
 
+  .lg\:items-center{
+    align-items: center;
+  }
+
   .lg\:gap-\[234px\]{
     gap: 234px;
   }
@@ -1163,6 +1192,10 @@ html {
   .lg\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .lg\:text-start{
+    text-align: start;
   }
 
   .lg\:text-4xl{
