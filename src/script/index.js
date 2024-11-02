@@ -16,21 +16,28 @@ investImages.forEach((img) => {
 // Pilih semua elemen card
 const cards = document.querySelectorAll('.card');
 
-// Tambahkan event listener untuk setiap card
-cards.forEach((card) => {
-  card.addEventListener('mouseover', () => {
-    card.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease';
-    card.style.transform = 'translateY(-10px) scale(1.05) rotate(2deg)'; // Mengangkat card dan zoom dengan rotasi
-    card.style.boxShadow = '0 20px 30px rgba(0, 0, 0, 0.15)'; // Tambahkan bayangan
-    card.style.background = 'linear-gradient(135deg, #e2e2e2, #ffffff)'; // Gradien saat hover
-  });
+// Buat observer untuk mengamati elemen yang masuk/keluar dari viewport
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Tambahkan kelas animasi ketika elemen masuk viewport
+        entry.target.classList.add('animate-fade-up');
+      } else {
+        // Hapus kelas animasi ketika elemen keluar dari viewport
+        entry.target.classList.remove('animate-fade-up');
+      }
+    });
+  },
+  { threshold: 0.1 } // threshold 0.1 berarti animasi akan aktif ketika 10% elemen terlihat
+);
 
-  card.addEventListener('mouseout', () => {
-    card.style.transform = 'translateY(0) scale(1) rotate(0deg)'; // Kembali ke posisi awal
-    card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)'; // Kembali ke bayangan awal
-    card.style.background = '#ffffff'; // Kembali ke warna latar belakang default
-  });
+// Amati setiap elemen card
+cards.forEach((card) => {
+  observer.observe(card);
 });
+
+
 
 // navbar dropdown
 document.addEventListener("DOMContentLoaded", function () {
