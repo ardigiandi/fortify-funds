@@ -588,10 +588,6 @@ html {
   top: 2rem;
 }
 
-.m-40{
-  margin: 10rem;
-}
-
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -629,10 +625,6 @@ html {
 
 .mt-20{
   margin-top: 5rem;
-}
-
-.mt-24{
-  margin-top: 6rem;
 }
 
 .mt-28{
@@ -951,11 +943,6 @@ html {
   line-height: 2.5rem;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
@@ -1021,22 +1008,6 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.underline{
-  text-decoration-line: underline;
-}
-
-.decoration-blue-600{
-  text-decoration-color: #2563eb;
-}
-
-.decoration-2{
-  text-decoration-thickness: 2px;
-}
-
-.underline-offset-4{
-  text-underline-offset: 4px;
-}
-
 .opacity-0{
   opacity: 0;
 }
@@ -1097,10 +1068,6 @@ html {
 
   .lg\:mt-24{
     margin-top: 6rem;
-  }
-
-  .lg\:mt-32{
-    margin-top: 8rem;
   }
 
   .lg\:mt-40{
@@ -1167,16 +1134,8 @@ html {
     width: 505px;
   }
 
-  .lg\:w-\[535px\]{
-    width: 535px;
-  }
-
   .lg\:w-\[600px\]{
     width: 600px;
-  }
-
-  .lg\:w-\[680px\]{
-    width: 680px;
   }
 
   .lg\:w-\[956px\]{
@@ -1185,10 +1144,6 @@ html {
 
   .lg\:flex-row{
     flex-direction: row;
-  }
-
-  .lg\:gap-0{
-    gap: 0px;
   }
 
   .lg\:gap-\[234px\]{
@@ -1229,10 +1184,6 @@ html {
 
   .lg\:text-\[46px\]{
     font-size: 46px;
-  }
-
-  .lg\:text-\[68px\]{
-    font-size: 68px;
   }
 
   .lg\:text-\[80px\]{
