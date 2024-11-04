@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/dist/output.css" />
     <title>Opportunities</title>
   </head>
   <body>
-    <!-- Start: Navbar -->
+    <!-- Ini Navbar -->
     <nav class="max-w-6xl mx-auto my-4 px-5 lg:px-0">
       <div class="flex justify-between items-center">
         <h1 class="text-2xl font-semibold">FortifyFunds</h1>
@@ -15,10 +15,14 @@
         <!-- Menu utama (hanya terlihat di layar besar) -->
         <ul class="gap-12 hidden lg:flex">
           <li>
-            <a href="index.html" class="nav-link text-base font-medium">Home</a>
+            <a href="/index.html" class="nav-link text-base font-medium"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="opportunities.html" class="nav-link text-base font-medium"
+            <a
+              href="/src/pages/opportunities.html"
+              class="nav-link text-base font-medium"
               >Opportunities</a
             >
           </li>
@@ -41,58 +45,442 @@
 
         <!-- Tombol Hamburger (hanya terlihat di layar kecil) -->
         <div id="btn-dropdown" class="block lg:hidden p-[10px]">
-          <img src="./public/images/menu.svg" alt="Menu Icon" />
+          <img src="/public/images/menu.svg" alt="Menu Icon" />
         </div>
       </div>
 
       <!-- Hamburger dropdown menu (tampilan mobile) -->
       <div
         id="dropdown-menu"
-        class="relative top-8 hidden flex-col px-4 md:px-10 w-full"
+        class="relative top-8 hidden flex-col px-4 md:px-10 w-full border-b"
       >
-        <div class="flex flex-col md:p-8 gap-4 bg-[#EBEEF1] rounded-md">
-          <ul class="flex flex-col gap-5 p-5">
+        <div class="flex flex-col md:p-8 gap-4">
+          <ul class="flex flex-col gap-4">
             <li>
-              <a href="index.html" class="nav-link text-base font-medium"
-                >Home</a
-              >
+              <a href="/index.html" class="text-base font-medium">Home</a>
             </li>
             <li>
               <a
-                href="opportunities.html"
-                class="nav-link text-base font-medium"
+                href="/src/pages/opportunities.html"
+                class="text-base font-medium"
                 >Opportunities</a
               >
             </li>
             <li>
-              <a href="services.html" class="nav-link text-base font-medium"
-                >Services</a
-              >
+              <a href="services.html" class="text-base font-medium">Services</a>
             </li>
             <li>
-              <a href="about.html" class="nav-link text-base font-medium"
-                >About</a
-              >
-            </li>
-            <li>
-              <a href="contact.html" class="nav-link text-base font-medium"
-                >Contact</a
-              >
+              <a href="about.html" class="text-base font-medium">About</a>
             </li>
           </ul>
+
+          <a
+            href="contact.html"
+            class="bg-blue-600 px-8 py-2 flex justify-center rounded-lg text-base font-semibold text-white"
+            >Contact</a
+          >
         </div>
       </div>
     </nav>
     <!-- End: Navbar -->
 
     <!-- Start: Main hero -->
-    <section class="max-w-6xl mx-auto justify-between mt-20">
-        <div class="flex flex-col gap-4 w-[300px]">
-            <h1>Opportunities</h1>
-            <p>Take command of your financial future and transcend to the life you've always envisioned. Unleash potential and master the art of investment with unparalleled ease and precision.
-            </p>
-        </div>
+    <section
+      class="max-w-6xl mx-auto mt-24 lg:mt-32 flex lg:flex-row gap-9 lg:gap-0 flex-col justify-between items-center px-5 lg:px-0"
+    >
+      <div class="flex flex-col gap-4 w-full lg:w-[535px]">
+        <h1 class="text-5xl lg:text-[68px] font-bold">Opportunities</h1>
+        <p class="text-sm lg:text-base text-gray-600 font-semibold">
+          Take command of your financial future and transcend to the life you've
+          always envisioned. Unleash potential and master the art of investment
+          with unparalleled ease and precision.
+        </p>
+      </div>
+      <img src="/public/images/main2.png" alt="" class="w-full lg:w-[680px]" />
     </section>
     <!-- End: Main hero -->
+
+    <!-- Start: Card -->
+    <section class="max-w-6xl mx-auto flex flex-wrap m-40 justify-center gap-5">
+      <!-- Start: Card -->
+      <div
+        class="card flex lg:flex-row flex-col p-5 border border-gray-600 rounded-3xl gap-5"
+      >
+        <img
+          src="/public/images/card1.png"
+          alt=""
+          class="w-[209px] h-[226px]"
+        />
+        <div class="flex flex-col gap-4 w-[170px]">
+          <h1 class="text-xl font-bold leading-tight tracking-[-0.7px]">
+            International Art Museum
+          </h1>
+          <div class="flex flex-col gap-2">
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/money.svg" alt="" />
+              <h1 class="text-sm text-gray-500 tracking-[-0.7px]">
+                Valuation $5M
+              </h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/hand.svg" alt="" />
+              <h1 class="text-sm text-gray-500 tracking-[-0.7px]">
+                75 investors
+              </h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/target.svg" alt="" />
+              <h1 class="text-sm text-gray-500 tracking-[-0.7px]">
+                Target $500,000
+              </h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/location.svg" alt="" />
+              <h1 class="text-sm text-gray-500 tracking-[-0.7px]">
+                London, Uk
+              </h1>
+            </div>
+          </div>
+          <div class="flex gap-2 items-center">
+            <a href="#" class="text-base text-biru font-bold tracking-[-0.7px]"
+              >LEARN MORE</a
+            >
+            <img src="/public/images/right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- End: Card -->
+      <!-- Start: Card -->
+      <div
+        class="card flex lg:flex-row flex-col p-5 border border-gray-600 rounded-3xl gap-5"
+      >
+        <img
+          src="/public/images/card2.png"
+          alt=""
+          class="w-[209px] h-[226px]"
+        />
+        <div class="flex flex-col gap-4 w-[170px]">
+          <h1 class="text-xl font-bold leading-tight">
+            Web Application Investment Program
+          </h1>
+          <div class="flex flex-col gap-2">
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/money.svg" alt="" />
+              <h1 class="text-sm text-gray-500">Valuation $5M</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/hand.svg" alt="" />
+              <h1 class="text-sm text-gray-500">75 investors</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/target.svg" alt="" />
+              <h1 class="text-sm text-gray-500">Target $500,000</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/location.svg" alt="" />
+              <h1 class="text-sm text-gray-500">London, Uk</h1>
+            </div>
+          </div>
+          <div class="flex gap-2 items-center">
+            <a href="#" class="text-base text-biru font-bold">LEARN MORE</a>
+            <img src="/public/images/right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- End: Card -->
+      <!-- Start: Card -->
+      <div
+        class="card flex lg:flex-row flex-col p-5 border border-gray-600 rounded-3xl gap-5"
+      >
+        <img
+          src="/public/images/card3.png"
+          alt=""
+          class="w-[209px] h-[226px]"
+        />
+        <div class="flex flex-col gap-4 w-[170px]">
+          <h1 class="text-xl font-bold leading-tight">
+            Construction for School Building
+          </h1>
+          <div class="flex flex-col gap-2">
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/money.svg" alt="" />
+              <h1 class="text-sm text-gray-500">Valuation $5M</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/hand.svg" alt="" />
+              <h1 class="text-sm text-gray-500">75 investors</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/target.svg" alt="" />
+              <h1 class="text-sm text-gray-500">Target $500,000</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/location.svg" alt="" />
+              <h1 class="text-sm text-gray-500">London, Uk</h1>
+            </div>
+          </div>
+          <div class="flex gap-2 items-center">
+            <a href="#" class="text-base text-biru font-bold">LEARN MORE</a>
+            <img src="/public/images/right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- End: Card -->
+      <!-- Start: Card -->
+      <div
+        class="card flex lg:flex-row flex-col p-5 border border-gray-600 rounded-3xl gap-5"
+      >
+        <img
+          src="/public/images/card4.png"
+          alt=""
+          class="w-[209px] h-[226px]"
+        />
+        <div class="flex flex-col gap-4 w-[170px]">
+          <h1 class="text-xl font-bold leading-tight">
+            Autoparts Gear Manufacture
+          </h1>
+          <div class="flex flex-col gap-2">
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/money.svg" alt="" />
+              <h1 class="text-sm text-gray-500">Valuation $5M</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/hand.svg" alt="" />
+              <h1 class="text-sm text-gray-500">75 investors</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/target.svg" alt="" />
+              <h1 class="text-sm text-gray-500">Target $500,000</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/location.svg" alt="" />
+              <h1 class="text-sm text-gray-500">London, Uk</h1>
+            </div>
+          </div>
+          <div class="flex gap-2 items-center">
+            <a href="#" class="text-base text-biru font-bold">LEARN MORE</a>
+            <img src="/public/images/right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- End: Card -->
+      <!-- Start: Card -->
+      <div
+        class="card flex lg:flex-row flex-col p-5 border border-gray-600 rounded-3xl gap-5"
+      >
+        <img
+          src="/public/images/card5.png"
+          alt=""
+          class="w-[209px] h-[226px]"
+        />
+        <div class="flex flex-col gap-4 w-[170px]">
+          <h1 class="text-xl font-bold leading-tight">
+            Finance Course Program
+          </h1>
+          <div class="flex flex-col gap-2">
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/money.svg" alt="" />
+              <h1 class="text-sm text-gray-500">Valuation $5M</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/hand.svg" alt="" />
+              <h1 class="text-sm text-gray-500">75 investors</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/target.svg" alt="" />
+              <h1 class="text-sm text-gray-500">Target $500,000</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/location.svg" alt="" />
+              <h1 class="text-sm text-gray-500">London, Uk</h1>
+            </div>
+          </div>
+          <div class="flex gap-2 items-center">
+            <a href="#" class="text-base text-biru font-bold">LEARN MORE</a>
+            <img src="/public/images/right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- End: Card -->
+      <!-- Start: Card -->
+      <div
+        class="card flex lg:flex-row flex-col p-5 border border-gray-600 rounded-3xl gap-5"
+      >
+        <img
+          src="/public/images/card6.png"
+          alt=""
+          class="w-[209px] h-[226px]"
+        />
+        <div class="flex flex-col gap-4 w-[170px]">
+          <h1 class="text-xl font-bold leading-tight">
+            Small Business Analysts
+          </h1>
+          <div class="flex flex-col gap-2">
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/money.svg" alt="" />
+              <h1 class="text-sm text-gray-500">Valuation $5M</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/hand.svg" alt="" />
+              <h1 class="text-sm text-gray-500">75 investors</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/target.svg" alt="" />
+              <h1 class="text-sm text-gray-500">Target $500,000</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/location.svg" alt="" />
+              <h1 class="text-sm text-gray-500">London, Uk</h1>
+            </div>
+          </div>
+          <div class="flex gap-2 items-center">
+            <a href="#" class="text-base text-biru font-bold">LEARN MORE</a>
+            <img src="/public/images/right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- End: Card -->
+      <!-- Start: Card -->
+      <div
+        class="card flex lg:flex-row flex-col p-5 border border-gray-600 rounded-3xl gap-5"
+      >
+        <img
+          src="/public/images/card7.png"
+          alt=""
+          class="w-[209px] h-[226px]"
+        />
+        <div class="flex flex-col gap-4 w-[170px]">
+          <h1 class="text-xl font-bold leading-tight">
+            IT Security Maintenance
+          </h1>
+          <div class="flex flex-col gap-2">
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/money.svg" alt="" />
+              <h1 class="text-sm text-gray-500">Valuation $5M</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/hand.svg" alt="" />
+              <h1 class="text-sm text-gray-500">75 investors</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/target.svg" alt="" />
+              <h1 class="text-sm text-gray-500">Target $500,000</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/location.svg" alt="" />
+              <h1 class="text-sm text-gray-500">London, Uk</h1>
+            </div>
+          </div>
+          <div class="flex gap-2 items-center">
+            <a href="#" class="text-base text-biru font-bold">LEARN MORE</a>
+            <img src="/public/images/right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- End: Card -->
+      <!-- Start: Card -->
+      <div
+        class="card flex lg:flex-row flex-col p-5 border border-gray-600 rounded-3xl gap-5"
+      >
+        <img
+          src="/public/images/card8.png"
+          alt=""
+          class="w-[209px] h-[226px]"
+        />
+        <div class="flex flex-col gap-4 w-[170px]">
+          <h1 class="text-xl font-bold leading-tight">
+            Architecture Site Planner
+          </h1>
+          <div class="flex flex-col gap-2">
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/money.svg" alt="" />
+              <h1 class="text-sm text-gray-500">Valuation $5M</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/hand.svg" alt="" />
+              <h1 class="text-sm text-gray-500">75 investors</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/target.svg" alt="" />
+              <h1 class="text-sm text-gray-500">Target $500,000</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/public/images/location.svg" alt="" />
+              <h1 class="text-sm text-gray-500">London, Uk</h1>
+            </div>
+          </div>
+          <div class="flex gap-2 items-center">
+            <a href="#" class="text-base text-biru font-bold">LEARN MORE</a>
+            <img src="/public/images/right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- End: Card -->
+    </section>
+    <!-- End: Card -->
+
+    <!-- Start: Footer -->
+    <footer
+      class="max-w-6xl mx-auto flex flex-wrap justify-between mt-32 mb-20 px-10 gap-9"
+    >
+      <div class="flex flex-col gap-3">
+        <img src="/public/images/footer.svg" alt="" class="w-[44px] h-[44px]" />
+        <div class="flex gap-2">
+          <img src="/public/images/fb.svg" alt="" />
+          <img src="/public/images/x.svg" alt="" />
+          <img src="/public/images/yt.svg" alt="" />
+        </div>
+        <h1 class="text-base text-gray-600 font-medium tracking-[-0.7px]">
+          Powerd by Sociallib
+        </h1>
+      </div>
+
+      <div class="w-[228px]">
+        <h1 class="text-base text-biru font-semibold tracking-[-0.7px]">
+          OFFICE
+        </h1>
+        <p class="text-base text-gray-600 mt-3 tracking-[-0.7px]">
+          186, G Block, Road-7, South Point, Jersey, Network.
+        </p>
+        <div class="flex gap-2 mt-5">
+          <img src="/public/images/email.svg" alt="" />
+          <h1 class="text-base text-gray-500 tracking-[-0.7px]">
+            inqery@investa.io
+          </h1>
+        </div>
+        <div class="flex gap-2 mt-1">
+          <img src="/public/images/hp.svg" alt="" />
+          <h1 class="text-base text-gray-500 tracking-[-0.7px]">
+            + 1 496 6696369
+          </h1>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <h1 class="text-base text-biru font-bold tracking-[-0.7px]">MENU</h1>
+        <ul class="flex flex-col gap-2">
+          <li class="text-base text-gray-500 tracking-[-0.7px]">Service</li>
+          <li class="text-base text-gray-500 tracking-[-0.7px]">Features</li>
+          <li class="text-base text-gray-500 tracking-[-0.7px]">Partners</li>
+          <li class="text-base text-gray-500 tracking-[-0.7px]">
+            Testimonials
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <h1 class="text-base text-biru font-bold tracking-[-0.7px]">LINKS</h1>
+        <ul class="flex flex-col gap-2">
+          <li class="text-base text-gray-500 tracking-[-0.7px]">About us</li>
+          <li class="text-base text-gray-500 tracking-[-0.7px]">Contact</li>
+          <li class="text-base text-gray-500 tracking-[-0.7px]">Help Center</li>
+          <li class="text-base text-gray-500 tracking-[-0.7px]">
+            Testimonials
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- End: Footer -->
+    <script src="./script/index.js"></script>
   </body>
 </html>
