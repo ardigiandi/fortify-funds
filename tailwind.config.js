@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./index.html", // Mengarahkan ke index.html di root proyek
-    "./src/**/*.{html,js}", // Mencakup semua file HTML dan JavaScript di folder src
+    "index.html", 
+    "src/**/*.{html,js}", 
   ],
   theme: {
     extend: {
